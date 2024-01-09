@@ -92,7 +92,7 @@ nav a:hover {
 /*here I wanted 1 of my divs to be bigger than the rest added the titles to my projects  */
 #work {
   display: grid;
-  grid-template-columns: 1f 1fr 1fr;
+  grid-template-columns: 1f 1fr 1fr; /*here followed an example by developer.mozilla.org that to get this and have it reflect like I wanted on my profile*/
   grid-template-rows: 200px 200px;
   gap: 40px;
   margin-top: 50px;
@@ -174,5 +174,24 @@ grid-row: 1;
     font-size: 20px;
     color: brown;
   }
+/*followd example from previous lesson for this one */
+  @media screen and (max-width:992px) {
+   #work {
+    width: 50%;
+   }
+   #about {
+    width: 50%;
+   }
 
-  @media (max-width:)
+  }
+   
+
+  @media screen and (min-width: 768) {
+    #work {
+      width: 100%;
+    }
+    #about {
+      width: 100%;
+    }
+  }
+
