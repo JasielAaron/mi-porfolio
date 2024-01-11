@@ -17,7 +17,9 @@ header {
   justify-content: space-between;
 }
 
-h1 {
+.test>h1 {
+  flex: 0 0 20%; 
+  text-align: right;
   font-size: 36px;
   color: brown;
   margin-top: 20px;
@@ -64,13 +66,13 @@ nav a:hover {
 }
 
 /*added the styles for the about me section here*/
-#aboutme {
+/* #aboutme {
   display: flex;
   flex-direction:end;
   flex-wrap: wrap;
   margin-top: 30px;
   line-height: 40px;
-}
+} */
 
 /*Played around with the width this shows how it will appear on my webiste*/
 
@@ -90,15 +92,16 @@ nav a:hover {
   
 }
 /*here I wanted 1 of my divs to be bigger than the rest added the titles to my projects  */
-#work {
-  display: grid;
-  grid-template-columns: 1f 1fr 1fr; /*here followed an example by developer.mozilla.org that to get this and have it reflect like I wanted on my profile*/
-  grid-template-rows: 200px 200px;
+.test {
+  display: flex;
   gap: 40px;
   margin-top: 50px;
   margin-right: 50px; /*added this as I wanted a little space towards the right of this section */
 }
-
+.test2 {
+  display: grid;
+  gap: 40px;
+}
 /*here i let the divs where I wanted them allowing me to have one bigger than the other one */
 .project1 {
 grid-column: 2/4;
@@ -138,7 +141,7 @@ grid-row: 1;
 
   }
 /*gave my page a height here and wanted everything to wrap when the you resize the window*/
-  #contactme {
+  /* #contactme {
     margin-top: 50px;
     height: 200px;
     display: flex;
@@ -146,7 +149,7 @@ grid-row: 1;
     justify-content: space-evenly;
 
   }
- 
+  */
   /*wanted to make sure there was space at the top added color to my text as well*/
 
   #contactme p {
