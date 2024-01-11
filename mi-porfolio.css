@@ -16,7 +16,12 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+header h1 {
+  color: brown;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 60px;
+}
 .test>h1 {
   flex: 0 0 20%; 
   text-align: right;
